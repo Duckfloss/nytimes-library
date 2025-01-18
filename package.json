@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.6.0",
     "eslint": "^7.10.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.22.0",
@@ -51,7 +51,7 @@
   },
   "scripts": {
     "start": "node server/index.js",
-    "build:main": "sass --load-path custom/styles --load-path styles/partials --source-map public/css/style.css.map --source-map-contents styles/style.scss public/css/style.css",
+    "build:main": "sass --load-path custom/styles --load-path styles/partials styles/style.scss public/css/style.css --source-map",
     "build:inline": "sass --load-path custom/styles --load-path styles/partials styles/errors.scss public/css/errors.css",
     "build": "npm run build:main && npm run build:inline",
     "debug": "node -r dotenv/config --inspect --debug-brk server/index.js",

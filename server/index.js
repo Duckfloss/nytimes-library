@@ -1,6 +1,9 @@
 'use strict'
 const path = require('path')
 
+// Adding this cause ChatGPT said to
+require('dotenv').config();
+
 const express = require('express')
 const csp = require('helmet-csp')
 
